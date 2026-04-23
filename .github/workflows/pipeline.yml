@@ -48,7 +48,7 @@ jobs:
       # Dica: instale com "curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin"
       # e rode "grype dir:. --fail-on medium"
       - name: 📦 SCA - Grype
-       run: |
+        run: |
           curl -sSfL https://raw.githubusercontent.com/anchore/grype/main/install.sh | sh -s -- -b /usr/local/bin
           grype dir:. --fail-on medium
 
